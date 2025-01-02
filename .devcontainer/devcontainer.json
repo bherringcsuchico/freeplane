@@ -1,0 +1,21 @@
+{
+  "name": "Freeplane Dev Container",
+  // Point to our Dockerfile
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // (Optional) Add or override VS Code settings
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  // Extensions to install automatically in Codespaces
+  "extensions": [
+    "vscjava.vscode-java-pack", // Java language support, Maven/Gradle, Test Runner, etc.
+    "github.vscode-pull-request-github" // PR and Issues in-editor
+  ],
+
+  // Use the 'vscode' user (already set up in MS base images)
+  "remoteUser": "vscode"
+}
